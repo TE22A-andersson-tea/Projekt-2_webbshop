@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webbshop</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="./skript.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Irish Grover">
 </head>
 <body>
-     
+     <header>
+        <h1>Vanligt Virkat</h1>
+    </header>
+
+    <nav>
+        <a href="https://sv.wikipedia.org/wiki/Bl%C3%A4ckfiskar">Hem</a>
+        <a href="https://sv.wikipedia.org/wiki/Sj%C3%B6stj%C3%A4rnor">Media</a>
+        <a href="https://sv.wikipedia.org/wiki/Knubbs%C3%A4l">Bli Medlem</a>
+        <a href="https://bilderochfakta.se/djur/delfiner/flasknosdelfin/">Våra Butiker</a>
+    </nav>
+
+    <main>
+        <article>
+            <img src="./img/akryl-garn.webb_img-paint.webp" alt="Akrylgarn, många färger">
+            <p>Akrylgarn 10kr</p>
+            <button onclick="KundvagnAdd('Akrylgarn', 10,'./img/akryl-garn.webb_img-paint.webp')">Lägg till i kundvagn</button>
+        </article>
+
+        <article>
+            <img src="./img/nordic-sky-bergen-handfargat-garn.webb_img-paint.webp" alt="nordic sky bergen, handfärgat garn">
+            <p>Nordic sky garn 40kr</p>
+            <button onclick="KundvagnAdd('Nordic sky garn',40,'./img/nordic-sky-bergen-handfargat-garn.webb_img-paint.webp')">Lägg till i kundvagn</button>
+        </article>
+
+        <article>
+            <img src="./img/Kamma-garn.webb_img-paint.webp" alt="Kamma-garn">
+            <p>Kamma garn 40kr</p>
+            <button onclick="KundvagnAdd('Kamma garn', 40,'./img/Kamma-garn.webb_img-paint.webp')">Lägg till i kundvagn</button>
+        </article>
+
+        <article>
+            <img src="./img/virk-krok.webb_img-paint.webp" alt="Virk krok">
+            <p>Virknål 30kr</p>
+            <button onclick="KundvagnAdd('Virknål',20,'./img/virk-krok.webb_img-paint.webp')">Lägg till i kundvagn</button>
+        </article>
+
+        <article>
+            <img src="./img/virkring.webb_img-paint.webp" alt="Virk ring, olika motiv">
+            <p>Virk ring 75kr</p>
+            <button onclick="KundvagnAdd('Virk ring', 75,'./img/virkring.webb_img-paint.webp')">Lägg till i kundvagn</button>
+        </article>
+
+        <article>
+            <img src="./img/virknål.webb_img-paint.webp" alt="Virknål">
+            <p>Nålar små 40,4kr</p>
+            <button onclick="KundvagnAdd('Nålar små', 40.4,'./img/virknål.webb_img-paint.webp')">Lägg till i kundvagn</button>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Kundvagn</h2>
+        <div class="Kundvagn">
+
+        </div>
+    </aside>
+    
 </body>
 </html>
