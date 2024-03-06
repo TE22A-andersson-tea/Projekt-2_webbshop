@@ -66,6 +66,11 @@ aside{
     font-family: "Irish Grover";
 }
 
+h4{
+    font-size: large;
+    text-align: center;
+}
+
 h2{
     padding-left: 2vw;
     font-size: 1em;
@@ -83,6 +88,14 @@ h2{
     height: auto;
     max-width: 15vh;
 }
+
+#meny_knapp{
+    display: none;
+}
+#meny_content {
+    display: none;
+}
+
 
 @media only screen and (min-width: 641px)and (max-width: 1007px){
     body{
@@ -140,12 +153,59 @@ h2{
     h3{
         font-size: 1em;
     }
+    #meny_knapp{
+        display: none;
+    }
+    #meny_content{
+        display: none;
+    }
+    
 }
 
 @media only screen and (max-width: 640px){
     body{
         display: flex;
         flex-direction: column;
+        background-position: center;
+    }
+    header{
+        font-size: 1.5em;
+    }
+    nav{
+        font-size: 1.5em;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article{
+        max-width: 65vw;
+        width: 100%;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    article > img{
+        max-height: 20vh;
+        width: auto;
+    }
+
+    #meny_content{
+        display: none;
+        border: 2px solid black;
+    }
+        
+    #meny:focus-within > #meny_content{ 
+        display: flex;
+        flex-direction: column;
+        background-color: white;
     }
 
 }
